@@ -1,49 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Preet Vijay Mishra</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preet Vijay Mishra - Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container" data-aos="fade-in">
-    <center>
-      <img src="profile.jpg" alt="Preet Vijay Mishra" class="profile-pic" />
-      <h1>Preet Vijay Mishra</h1>
-      <h2>Electronics & Communication Engineering Student</h2>
-      <a class="resume-btn" href="PreetVijayMishraResume.pdf" target="_blank">
-        <i class="fas fa-file-download"></i> Download Resume
-      </a>
-    </center>
-    <div class="about" data-aos="fade-right">
-      <h2>About Me</h2>
-      <p>I am a motivated and detail-oriented second-year engineering student with a strong interest in Machine Learning, proficient in Python and C++. Passionate about AI, data science, and real-world projects that solve problems.</p>
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+  
+  <div class="container">
+    <div class="profile-section" data-aos="fade-down">
+      <center>
+        <div class="profile-pic-container">
+          <img src="profile.jpg" alt="Preet Vijay Mishra" class="profile-pic" />
+          <div class="profile-ring"></div>
+        </div>
+        <h1>Preet Vijay Mishra</h1>
+        <h2 class="typing-text"></h2>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+        <a class="resume-btn" href="PreetVijayMishraResume.pdf" target="_blank">
+          <span>Download Resume</span>
+          <i class="fas fa-download"></i>
+        </a>
+      </center>
     </div>
-    <div class="skills" data-aos="fade-left">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, C++, Embedded C, Java</li>
-        <li>Pandas, Numpy</li>
-        <li>Teamwork, Communication, Problem-solving, Adaptability</li>
-      </ul>
-    </div>
-    <div class="projects" data-aos="zoom-in">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>2048 Game:</strong> Puzzle game built using Python and Pandas.</li>
-        <li><strong>Gesture-Controlled Car:</strong> Arduino Nano + accelerometer for hand gesture control.</li>
-        <li><strong>Face Detection with ESP32-CAM:</strong> Real-time face recognition project.</li>
-      </ul>
+
+    <div class="content-section">
+      <div class="about card" data-aos="fade-right">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <p>I am a motivated and detail-oriented second-year engineering student with a strong interest in Machine Learning, proficient in Python and C++. I am passionate about AI, data science, and building real-world projects that solve problems.</p>
+      </div>
+
+      <div class="skills card" data-aos="fade-left">
+        <h2><i class="fas fa-code"></i> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming</h3>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Python</li>
+              <li><i class="fas fa-check-circle"></i> C++</li>
+              <li><i class="fas fa-check-circle"></i> Embedded C</li>
+              <li><i class="fas fa-check-circle"></i> Java</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Libraries</h3>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Pandas</li>
+              <li><i class="fas fa-check-circle"></i> Numpy</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Teamwork</li>
+              <li><i class="fas fa-check-circle"></i> Communication</li>
+              <li><i class="fas fa-check-circle"></i> Problem-solving</li>
+              <li><i class="fas fa-check-circle"></i> Adaptability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects card" data-aos="fade-up">
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <div class="project-grid">
+          <div class="project-item">
+            <h3>2048 Game</h3>
+            <p>Classic puzzle game built using Python and Pandas.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Game Dev</span>
+            </div>
+          </div>
+          <div class="project-item">
+            <h3>Gesture-Controlled Car</h3>
+            <p>Arduino Nano and accelerometer-based hand gesture car.</p>
+            <div class="project-tags">
+              <span>Arduino</span>
+              <span>Embedded C</span>
+              <span>IoT</span>
+            </div>
+          </div>
+          <div class="project-item">
+            <h3>Face Detection with ESP32-CAM</h3>
+            <p>Real-time face recognition using ESP32-CAM.</p>
+            <div class="project-tags">
+              <span>Computer Vision</span>
+              <span>ESP32</span>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <footer>
-    &copy; 2025 Preet Vijay Mishra
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Preet Vijay Mishra. All rights reserved.</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
